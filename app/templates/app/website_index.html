@@ -1,0 +1,497 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'app/css/website_style.css' %}">
+    <link rel="stylesheet" href="{% static 'app/css/carousel.css'%}">
+    <script src="{% static 'app/css/carousel.js'}" defer></script>
+</head>
+
+<body class="dark-body">
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg dark-body">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <p class="text-dark-green toggle-text text-light-green" id="letter_logo">F.</p>
+            </a>
+            <button class="navbar-toggler theme-btn dark-theme-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="color: #F2F2F2 !important;"><i
+                        class="fa fa-bars toggle_fa_icon navbar-toggler-dark-icon"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-white-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-white-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-white-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-white-link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-white-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container">
+        <!-- Toggler -->
+        <!-- <div class="toggle py-3 d-flex align-items-center d-none">
+            <div>
+                <input type="checkbox" id="toggler">
+                <label for="toggler" class="button"></label>
+            </div>
+        </div> -->
+
+        <div class="py-4"></div>
+
+        <!-- Profile -->
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="my_profile d-flex justify-content-between">
+                    <div class="col-md-2 profile_img_div">
+                        <img src="{% static 'app/images/profile.jpg' %}" alt="">
+                    </div>
+                    <div class="col-md-9 profile_text_div">
+                        <p class="text-dark-green mb-4 color-white-js text-color-white my_name">
+                            Fatima
+                            Razzaq</p>
+                        <p style="font-weight:bold ;" class="gray_color text-color-white my_desc">Transforming ideas
+                            into functional,
+                            elegant
+                            solutions - let's
+                            collaborate</p>
+
+                        <a href="#" class="btn theme-btn dark-theme-btn my-4">Download Resume</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <!-- About -->
+        <div class="my-5 section_class" id="about" style="margin-top: 20px;">
+            <h2 style="font-weight: bold;" class="text-dark-green mb-4 color-white-js text-color-white">About</h2>
+            <p class="gray_color text-color-white">Aspiring Full-Stack Developer with 3+ years of experience in Web
+                Development. I help
+                businesses in
+                developing their
+                online web presence by converting their mind-blowing ideas into web apps.Aspiring Full-Stack Developer
+                with 3+ years of experience in Web Development. I help businesses in developing their
+                online web presence by converting their mind-blowing ideas into web apps.Aspiring Full-Stack Developer
+                with 3+ years of experience in Web Development. I help businesses in developing their
+                online web presence by converting their mind-blowing ideas into web apps.</p>
+        </div>
+
+        <div class="row skill_images">
+            <div class="col-md-2 d-flex align-items-center"><img src="{% static 'app/images/html5_logo.png' %}" alt=""
+                    width="100%"></div>
+            <div class="col-md-2 d-flex align-items-center"><img src="{% static 'app/images/css_logo.png' %}" alt=""
+                    width="100%"></div>
+            <div class="col-md-2 d-flex align-items-center"><img src="{% static 'app/images/js_logo.png' %}" alt=""
+                    width="100%"></div>
+            <div class="col-md-2 d-flex align-items-center"><img src="{% static 'app/images/react_logo.png' %}" alt=""
+                    width="100%"></div>
+            <div class="col-md-2 d-flex align-items-center"><img src="{% static 'app/images/python_logo.png' %}" alt=""
+                    width="100%"></div>
+            <div class="col-md-2 d-flex align-items-center"><img src="{% static 'app/images/django_logo.jpg' %}" alt=""
+                    width="100%"></div>
+        </div>
+
+
+        <!-- Experience -->
+        <div class="my-5 section_class" style="margin-top: 20px;" id="experience">
+            <h2 style="font-weight: bold;" class="text-dark-green mb-4 color-white-js text-color-white">Experience</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="border experience-card bg-light-gray mb-4" style="padding: 25px;">
+                        <h4 class="text-dark-green toggle-text text-light-green" style="font-weight: bold;">React
+                            Developer Intern</h4>
+                        <p>Feb 2023 - Mar 2023</p>
+                        <ul class="experience_ul">
+                            <li>Designing and developing user interfaces using React and Material Ui</li>
+                            <li>Optimizing the performance of application by reducting rendering time and minimizing
+                                network
+                                requests </li>
+                            <li>Participating in code reviews,testing, and debugging to ensure quality and stability of
+                                the
+                                software</li>
+                            <li>Troubleshooting and debugging issues that arise during development or in production</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="border experience-card bg-light-gray mb-4" style="padding: 25px;">
+                        <h4 class="text-dark-green toggle-text text-light-green" style="font-weight: bold;">React
+                            Developer Intern</h4>
+                        <p>Feb 2023 - Mar 2023</p>
+                        <ul class="experience_ul">
+                            <li>Designing and developing user interfaces using React and Material Ui</li>
+                            <li>Optimizing the performance of application by reducting rendering time and minimizing
+                                network
+                                requests </li>
+                            <li>Participating in code reviews,testing, and debugging to ensure quality and stability of
+                                the
+                                software</li>
+                            <li>Troubleshooting and debugging issues that arise during development or in production</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="border experience-card bg-light-gray mb-4" style="padding: 25px;">
+                        <h4 class="text-dark-green toggle-text text-light-green" style="font-weight: bold;">React
+                            Developer Intern</h4>
+                        <p>Feb 2023 - Mar 2023</p>
+                        <ul class="experience_ul">
+                            <li>Designing and developing user interfaces using React and Material Ui</li>
+                            <li>Optimizing the performance of application by reducting rendering time and minimizing
+                                network
+                                requests </li>
+                            <li>Participating in code reviews,testing, and debugging to ensure quality and stability of
+                                the
+                                software</li>
+                            <li>Troubleshooting and debugging issues that arise during development or in production</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Projects -->
+        <div class="my-5 section_class" style="margin-top: 20px;" id="projects">
+            <h2 style="font-weight: bold;" class="text-dark-green mb-4 color-white-js text-color-white">Projects</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="project-card bg-light-gray">
+                        <div class="mb-4">
+                            <div class="img-div">
+                                <img src="{% static 'app/images/rajabeast_img.png' %}" alt="">
+                            </div>
+
+                        </div>
+                        <div class="text-center pb-4">
+                            <h4>Online Library</h4>
+                            <p class="px-4" style="font-size: 13px;">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Vero, ex!
+                                Exercitationem atque
+                                et nesciunt omnis enim, accusantium aut fuga molestias?</p>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="" class="btn bg-dark-green bg-light-green mx-2">View Project</a>
+                                <a href="" class="btn bg-dark-green bg-light-green"><i class="fa fa-link"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="project-card bg-light-gray">
+                        <div class="mb-4">
+                            <div class="img-div">
+                                <img src="{% static 'app/images/mannatpk.png' %}" alt="">
+                            </div>
+
+                        </div>
+                        <div class="text-center pb-4">
+                            <h4>Online Library</h4>
+                            <p class="px-4" style="font-size: 13px;">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Vero, ex!
+                                Exercitationem atque
+                                et nesciunt omnis enim, accusantium aut fuga molestias?</p>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="" class="btn bg-dark-green bg-light-green mx-2">View Project</a>
+                                <a href="" class="btn bg-dark-green bg-light-green"><i class="fa fa-link"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="project-card bg-light-gray">
+                        <div class="mb-4">
+                            <div class="img-div">
+                                <img src="{% static 'app/images/crayonmoney.png' %}" alt="">
+                            </div>
+
+                        </div>
+                        <div class="text-center pb-4">
+                            <h4>Online Library</h4>
+                            <p class="px-4" style="font-size: 13px;">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Vero, ex!
+                                Exercitationem atque
+                                et nesciunt omnis enim, accusantium aut fuga molestias?</p>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="" class="btn bg-dark-green bg-light-green mx-2">View Project</a>
+                                <a href="" class="btn bg-dark-green bg-light-green"><i class="fa fa-link"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Reviews -->
+        <div class="my-5 section_class" style="margin-top: 20px;" id="reviews">
+            <h2 style="font-weight: bold;" class="text-dark-green mb-3 color-white-js text-color-white">Reviews</h2>
+
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul class="carousel review-cards">
+                    <li class="card review-card"
+                        style="background-color: #27282F;box-shadow: 0px 5px 10px 1px #1C2025;">
+                        <div class="img"><img src="{% static 'app/images/img-1.jpg' %}" alt="img" draggable="false">
+                        </div>
+                        <h4 class="toggle-text text-light-green">Blanche Pearson</h4>
+                        <div>
+                            <span class="fa fa-star star-checked"></span>
+                            <span class="fa fa-star star-checked"></span>
+                            <span class="fa fa-star star-checked"></span>
+                            <span class="fa fa-star star-checked"></span>
+                            <span class="fa fa-star star-checked"></span>
+                        </div>
+                        <h6 class="text my-4 px-3  text-white"><i>"Very quick and delivered in high quality!"</i></h6>
+                    </li>
+                    <li class="card review-card"
+                        style="background-color: #27282F;box-shadow: 0px 5px 10px 1px #1C2025;">
+                        <div class="img"><img src="{% static 'app/images/img-2.jpg' %}" alt="img" draggable="false">
+                        </div>
+                        <h4 class="toggle-text text-light-green">Joenas Brauers</h4>
+                        <div>
+                            <span class="fa fa-star star-checked"></span>
+                            <span class="fa fa-star star-checked"></span>
+                            <span class="fa fa-star star-checked"></span>
+                            <span class="fa fa-star star-checked"></span>
+                            <span class="fa fa-star star-checked"></span>
+                        </div>
+                        <h6 class="text mt-4 px-3  text-white"><i>"Very quick and delivered in high quality!"</i></h6>
+                    </li>
+                    <li class="card review-card"
+                        style="background-color: #27282F;box-shadow: 0px 5px 10px 1px #1C2025;">
+                        <div class="img"><img src="{% static 'app/images/img-3.jpg' %}" alt="img" draggable="false">
+                        </div>
+                        <h4 class="toggle-text text-light-green">Lariach French</h4>
+                        <div>
+                            <span class="fa fa-star star-checked"></span>
+                            <span class="fa fa-star star-checked"></span>
+                            <span class="fa fa-star star-checked"></span>
+                            <span class="fa fa-star star-checked"></span>
+                            <span class="fa fa-star star-checked"></span>
+                        </div>
+                        <h6 class="text mt-4 px-3 text-white"><i>"Very quick and delivered in high quality!"</i></h6>
+                    </li>
+                    <li class="card review-card"
+                        style="background-color: #27282F;box-shadow: 0px 5px 10px 1px #1C2025;">
+                        <div class="img"><img src="{% static 'app/images/img-4.jpg' %}" alt="img" draggable="false">
+                        </div>
+                        <h4 class="toggle-text text-light-green">James Khosravi</h4>
+                        <div>
+                            <span class="fa fa-star star-checked"></span>
+                            <span class="fa fa-star star-checked"></span>
+                            <span class="fa fa-star star-checked"></span>
+                            <span class="fa fa-star star-checked"></span>
+                            <span class="fa fa-star star-checked"></span>
+                        </div>
+                        <h6 class="text mt-4 px-3  text-white"><i>"Very quick and delivered in high quality!"</i></h6>
+                    </li>
+                    <li class="card review-card"
+                        style="background-color: #27282F;box-shadow: 0px 5px 10px 1px #1C2025;">
+                        <div class="img"><img src="{% static 'app/images/img-5.jpg' %}" alt="img" draggable="false">
+                        </div>
+                        <h4 class="toggle-text text-light-green">Kristina Zasiadko</h4>
+                        <div>
+                            <span class="fa fa-star star-checked"></span>
+                            <span class="fa fa-star star-checked"></span>
+                            <span class="fa fa-star star-checked"></span>
+                            <span class="fa fa-star star-checked"></span>
+                            <span class="fa fa-star star-checked"></span>
+                        </div>
+                        <h6 class="text mt-4 px-3  text-white"><i>"Very quick and delivered in high quality!"</i></h6>
+                    </li>
+                    <li class="card review-card"
+                        style="background-color: #27282F;box-shadow: 0px 5px 10px 1px #1C2025;">
+                        <div class="img"><img src="{% static 'app/images/img-6.jpg' %}" alt="img" draggable="false">
+                        </div>
+                        <h4 class="toggle-text text-light-green">Donald Horton</h4>
+                        <div>
+                            <span class="fa fa-star star-checked"></span>
+                            <span class="fa fa-star star-checked"></span>
+                            <span class="fa fa-star star-checked"></span>
+                            <span class="fa fa-star star-checked"></span>
+                            <span class="fa fa-star star-checked"></span>
+                        </div>
+                        <h6 class="text mt-4 px-3  text-white"><i>"Very quick and delivered in high quality!"</i></h6>
+                    </li>
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+
+
+
+        </div>
+
+
+
+        <!-- Contact Me -->
+        <div class="my-5 section_class" style="margin-top: 20px;" id="contact">
+            <h2 style="font-weight: bold;" class="text-dark-green mb-3 color-white-js text-color-white">Contact Me</h2>
+
+            <form action="">
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" class="input-style input-dark-style" placeholder="Full Name"
+                            name="full_name">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" class="input-style input-dark-style" placeholder="E-mail Address"
+                            name="email">
+                    </div>
+                    <div class="col-md-12">
+                        <input type="text" class="input-style input-dark-style" placeholder="Subject" name="subject">
+                    </div>
+                    <div class="col-md-12">
+                        <textarea name="" class="input-style input-dark-style" id="" cols="30" rows="10"
+                            placeholder="Message"></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn theme-btn dark-theme-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Socials -->
+    <div class="my-5">
+        <div class="d-flex justify-content-center">
+            <i class="fa-brands fa-github social-icons toggle-text text-light-green px-2"></i>
+            <i class="fa-brands fa-linkedin social-icons toggle-text text-light-green px-2"></i>
+            <i class="fa-solid fa-envelope social-icons toggle-text text-light-green px-2"></i>
+        </div>
+        <hr class="hr bg-dark-green bg-light-green">
+        <div class="d-flex justify-content-center text-dark-green toggle-text text-light-green">
+            &copy;2023
+            <pre> - </pre> <b>F.</b>
+            <pre> | </pre> All right reserved.
+        </div>
+    </div>
+
+
+
+    <!-- boostrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+
+        // var toggler = document.querySelector("#toggler");
+        // var navbar_toggler_icon = document.querySelector(".toggle_fa_icon");
+        // var body = document.querySelector("body");
+        // var nav = document.querySelector("nav");
+        // var toggle_items = document.querySelectorAll(".toggle-text text-light-green");
+        // var experience_card = document.querySelectorAll(".experience-card");
+        // var project_card = document.querySelectorAll(".project-card");
+        // var review_card = document.querySelectorAll(".review-cards > li");
+        // var nav_links = document.querySelectorAll(".nav-link");
+        // var color_white_js = document.querySelectorAll(".color-white-js text-color-white");
+        // var gray_color = document.querySelectorAll(".gray_color text-color-white");
+        // var theme_btn = document.querySelectorAll(".theme-btn dark-theme-btn");
+        // var bg_dark_green = document.querySelectorAll(".bg-dark-green bg-light-green");
+        // var input_style = document.querySelectorAll(".input-style input-dark-style");
+
+
+        // console.log(typeof toggler.value)
+
+        // if (toggler.value === "on") {
+        //     navbar_toggler_icon.classList.toggle("navbar-toggler-dark-icon");
+        //     body.classList.toggle("dark-body");
+        //     nav.classList.toggle("dark-body");
+        //     toggle_items.forEach((item) => {
+        //         item.classList.toggle("text-light-green")
+        //     })
+
+        //     experience_card.forEach((item) => {
+        //         item.classList.toggle("bg-light-gray")
+        //     })
+
+        //     project_card.forEach((item) => {
+        //         item.classList.toggle("bg-light-gray")
+        //     })
+
+
+        //     review_card.forEach((item) => {
+        //         item.style.backgroundColor = "#27282F"
+        //         item.classList.toggle("bg-light-gray")
+        //     })
+
+        //     nav_links.forEach((item) => {
+        //         item.classList.toggle("nav-white-link")
+        //     })
+
+        //     color_white_js.forEach((item) => {
+        //         // item.classList.remove("text-dark-green")
+        //         item.classList.toggle("text-color-white")
+        //     })
+        //     gray_color.forEach((item) => {
+        //         // item.classList.remove("gray_color text-color-white")
+        //         item.classList.toggle("text-color-white")
+        //     })
+
+        //     bg_dark_green.forEach((item) => {
+        //         // item.classList.remove("bg-dark-green bg-light-green")
+        //         item.classList.toggle("bg-light-green")
+        //     })
+
+        //     input_style.forEach((item) => {
+        //         item.classList.toggle("input-dark-style")
+        //     })
+
+        //     theme_btn.forEach((item) => {
+        //         // item.classList.remove("theme-btn dark-theme-btn")
+        //         item.classList.toggle("dark-theme-btn dark-theme-btn")
+        //     })
+
+
+
+        // }
+
+    </script>
+
+
+</body>
+
+</html>
