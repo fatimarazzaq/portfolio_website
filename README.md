@@ -22,27 +22,35 @@ My Django Portfolio Project is a web application that showcases my portfolio as 
 
 2. Clone the repository to your local machine:
 
-```git clone <https://github.com/fatimarazzaq/portfolio_website.git>```
+```
+git clone <https://github.com/fatimarazzaq/portfolio_website.git>
+```
 
 3. Navigate to the project directory:
 
-```cd portfolio_website```
+```
+cd portfolio_website
+```
 
 4. Install the required dependencies:
 
-```pip install -r requirements.txt```
+```
+pip install -r requirements.txt
+```
 
 5. Apply database migrations:
 
-```python manage.py migrate```
+```
+python manage.py migrate
+```
 
 6. Run the development server:
 
-```python manage.py runserver```
+```
+python manage.py runserver
+```
 
-8. Access the application in your web browser at
-
-```<http://localhost:8000/>```
+8. Access the application in your web browser at <http://localhost:8000/>
 
 ## Usage
 
